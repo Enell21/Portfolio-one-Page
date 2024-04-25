@@ -1,0 +1,32 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.navbar {
+  justify-content: end;
+  top: 0;
+
+  // z-index: 1000; /* Ensure the navbar is above other content */
+
+  .container {
+    ul {
+      margin: 2px;
+
+      li {
+        padding: 2px;
+
+        a {
+          color: #c0c0c0 !important;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 1.3rem;
+          padding: 0.875rem;
+          opacity: 1;
+
+          @include media-breakpoint-down(md) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

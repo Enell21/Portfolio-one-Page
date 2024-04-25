@@ -1,0 +1,19 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.home {
+  text-align: center;
+  .container {
+    .row {
+      margin: 0;
+      padding: 2px;
+      .text {
+        position: absolute;
+        top: 10%;
+        left: 3%;
+        text-align: center;
+        color: white;
+      }
+    }
+  }
+}
